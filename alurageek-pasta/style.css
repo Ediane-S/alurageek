@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body.dark{
+    background-color: #304b5f ;
+}
+
+body{
+    background-color: #e6f2f4;
+}
+
+header{
+    background-color: #e6f2f4 ;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4% 0 4%;
+    position: relative;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    margin-top: 1%;
+}
+
+.chekbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.0);
+}
+
+.label .ball{
+    background-color: #f6d110;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.chekbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.toogle-adicionar{
+    background-color: #fff9c7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 10%;
+    height: 70%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.buttonAdd{
+    cursor: pointer;
+    border-style: none;
+    background: transparent;
+}
+
+.buttonAdd:hover{
+    font-size: 17px;
+}
+
+.formCard{
+    z-index: 100;
+    height: 400px;
+    width: 500px;
+    border-radius: 50px;
+    position: absolute;
+    top: 7vh;
+    background-color: #0af5f5;
+    display: none;
+}
+
+.formCard form input{
+    display: flex;
+    height: 60px;
+    width: 80%;
+    margin: 7%;
+    border-radius: 25px;
+    text-align: center;
+    border-style: none;
+}
+
+.formCard form button{
+    height: 50px;
+    width: 25%;
+    border-radius: 40px;
+    margin: 0 35%;
+    border-style: solid #304b5f ;
+    background-color: #f6d110;
+}
+
+.first-section{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.p-FirstS-1{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.p-FirstS-1 i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 1%;
+    background-color: #f6d110;
+}
+
+.p-FirstS-2 p i{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #f6d110;
+}
+
+.brawl-txt h1{
+    margin: 4% 0;
+
+}
+
+.img{
+    height: 370px;
+width: 250px;
+}
+
+.img-FirstS{
+    height: 450px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.p-FirstS-2{
+    display: inline-block;
+    align-items: center;
+    padding-top: 10%;
+    margin-right: 10%;
+}
+
+.p-FirstS-2 p{
+    margin: 35% 0;
+    font-size: 22px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 4%;
+}
+
+.card{
+    height: 400px;
+    width: 280px;
+    border-radius: 30px;
+    background-color: #fff9c7;
+    margin: 5% 0;
+}
+
+.imgCard img{
+    height: 250px;
+    width: 250px;
+    margin: 5%;
+    border-radius: 30px;
+    background-color: green;
+}
+
+.txtCard{
+    font-size: 22px;
+    font-weight: bolder;
+    margin-left: 6%;
+}
+
+.preco{
+    color: #0af550;
+}
+
+ .preco-icon{
+    display: flex;
+    justify-content: space-between;
+    margin: 9% 8% 5% 5%;
+    font-size: 20px;
+ }
+
+ .btnLixeira{
+    cursor: pointer;
+    background: transparent;
+    border-style: none;
+    font-size: 21px;
+ }
+
+ .btnLixeira:hover{
+    color: red;
+    font-size: 23px;
+ }
+
+ footer{
+    text-align: center;
+    background-color: #f6d110;
+ }
